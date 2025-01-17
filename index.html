@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表情包站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <button class="info-button" onclick="showPopup()">说明</button>
+    <!-- 弹出框 -->
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+    <div class="info-popup" id="infoPopup">
+        <h2>说明</h2>
+        <p>
+            这里是孙大王表情包网站<br>
+            当前版本：测试版<br>
+            搜索功能只能用英文，例如‘jianguo’<br>
+            单机图片可放大显示原尺寸
+        </p>
+        <button class="close-button" onclick="closePopup()">关闭</button>
+    </div>
+
+    <!-- 搜索框部分 -->
+    <input type="text" id="search" placeholder="搜索表情包(只能英文目前)" class="search-box">
+
+    <!-- 表情包展示区 -->
+    <div class="emoji-gallery">
+        <img class="emoji" src="jpg/cat1.png" alt="表情包1" data-name="xiaojv1">
+        <img class="emoji" src="jpg/cat2.jpg" alt="表情包2" data-name="xiaojvandxiaohei">
+        <img class="emoji" src="jpg/cat3.jpg" alt="表情包3" data-name="jiuzhimao">
+        <img class="emoji" src="jpg/cat4.jpg" alt="表情包4" data-name="aixinmao">
+
+        <img class="emoji" src="jpg/jian1.jpg" alt="表情包5" data-name="jianguo1">
+        <img class="emoji" src="jpg/jian2.jpg" alt="表情包6" data-name="jianguo2">
+        <img class="emoji" src="jpg/jian3.jpg" alt="表情包7" data-name="jianguo3">
+        <img class="emoji" src="jpg/jian4.jpg" alt="表情包8" data-name="jianguo4">
+        <img class="emoji" src="jpg/jian5.jpg" alt="表情包9" data-name="jianguo5">
+        <img class="emoji" src="jpg/jian6.jpg" alt="表情包10" data-name="jianguo6">
+        <img class="emoji" src="jpg/jian7.jpg" alt="表情包11" data-name="jianguo7">
+        <!-- 更多表情包 -->
+    </div>
+</div>
+
+
+<div class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image" />
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
